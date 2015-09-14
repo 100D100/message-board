@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'messages#index'
+  root 'messages#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -34,7 +34,7 @@ Rails.application.routes.draw do
   #     resource :seller
   #   end
 
-  # Example resource route with more complex sub-resources:
+  # Example resource oute with more complex sub-resources:
   #   resources :products do
   #     resources :comments
   #     resources :sales do

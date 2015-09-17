@@ -1,8 +1,8 @@
 <div class="panel panel-default">
   <div class="panel-heading">
-    <strong>メッセージ一覧</strong>
+    メッセージ一覧
   </div>
-    
+
   <div class="panel-body">
     <% @messages.each do |message| %>
       <span class="label label-info"><%= message.name %></span>
@@ -11,6 +11,9 @@
     <% end %>
   </div>
 </div>
+
+<% #部分テンプレートを読み込んでいる %>
+<%= render 'form' %>
 
 <%= form_for(@message) do |f| %>
   <% if @message.errors.present? %>

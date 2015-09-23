@@ -1,9 +1,8 @@
 <div class="panel panel-default">
   <div class="panel-heading">
-    メッセージ一覧
+    <strong>メッセージ一覧</strong>
   </div>
 
- <form class="form-horizontal">
   <div class="panel-body">
     <% @messages.each do |message| %>
       <span class="label label-info"><%= message.name %></span>
@@ -15,7 +14,6 @@
       <br>
     <% end %>
   </div>
-  </form>
 </div>
 
 <%= render 'form' %>
